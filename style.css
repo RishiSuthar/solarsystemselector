@@ -148,3 +148,7 @@ button {
 button:hover {
     background-color: #6fa824; /* Darker green on hover */
 }
+
+#maintitle1 {
+    text-align: center;
+}
