@@ -27,9 +27,9 @@ function updateBatteryOptions() {
     batterySection.innerHTML = `<h2>Select a Battery</h2>`;
 
     const batteries = [
-        { name: 'Tubular 200AH', price: 23500, img: 'images/battery-200ah-tubular.png', specsLink: 'https://pdfupload.io/docs/b178b8c4' },
-        { name: 'Maintenance Free KM12 12V 200AH', price: 35500, img: 'images/battery-200ah-mf.png', specsLink: 'https://pdfupload.io/docs/a0b61089' },
-        { name: 'Lithium LFP 51.2-100W', price: 125000, img: 'images/battery-100ah-lithium.png', specsLink: 'https://pdfupload.io/docs/e0115faa' }
+        { name: 'Tubular 200AH', price: 23500, img: 'battery-200ah-tubular.png', specsLink: 'https://pdfupload.io/docs/b178b8c4' },
+        { name: 'Maintenance Free KM12 12V 200AH', price: 35500, img: 'battery-200ah-mf.png', specsLink: 'https://pdfupload.io/docs/a0b61089' },
+        { name: 'Lithium LFP 51.2-100W', price: 125000, img: 'battery-100ah-lithium.png', specsLink: 'https://pdfupload.io/docs/e0115faa' }
     ];
 
     // Determine which batteries to show based on selected inverter
@@ -119,7 +119,7 @@ function updatePanelRequirement() {
 
     for (let i = 0; i < selectedPanels; i++) {
         const img = document.createElement('img');
-        img.src = 'images/solar-panel.png'; // Path to your solar panel image
+        img.src = 'solar-panel.png'; // Path to your solar panel image
         img.alt = 'Solar Panel';
         img.className = 'solar-panel'; // Add a class for styling
         panelImagesContainer.appendChild(img);
