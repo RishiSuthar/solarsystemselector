@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Spacing below the title */
+    font-size: 2.5em; /* Larger title size */
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+.option {
+    display: inline-block;
+    width: 160px; /* Slightly wider option */
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, border-color 0.3s;
+    text-align: center;
+    background-color: #fafafa; /* Light background for options */
+    position: relative; /* Allow positioning for the hover effect */
+}
+
+.option:hover {
+    border-color: #4CAF50; /* Change border color on hover */
+    transform: scale(1.03); /* Slightly scale up on hover */
+}
+
+.option img {
+    width: 100px; /* Set a uniform width for images */
+    height: 100px; /* Set a uniform height for images */
+    object-fit: cover; /* Ensure images cover their area without distortion */
+    margin-bottom: 10px; /* Space below images */
+}
+
+.option.selected {
+    border-color: #4CAF50; /* Green outline for selection */
+    border-width: 8px;
+    transform: scale(1.05); /* Slightly scale up selected options */
+}
+
+.hidden {
+    display: none;
+}
+
+#summary-section {
+    background-color: #f9f9f9;
+    padding: 20px; /* Increased padding for better spacing */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+/* Center the panel images in the panel section */
+#panel-info {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for multiple images */
+    align-items: flex-start; /* Align images to the start */
+}
+
+.panel-images {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+    gap: 15px; /* Increased space between images */
+    justify-content: flex-start; /* Align items to the left */
+    margin-top: 10px; /* Space above panel images */
+}
+
+.solar-panel {
+    width: 60px; /* Set width for solar panels */
+    height: auto; /* Auto height to maintain aspect ratio */
+}
+
+#total-cost {
+    color: rgb(55, 55, 55); /* Dark text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.5em; /* Increase the font size */
+}
+
+.price {
+    color: #003366; /* Dark blue color */
+    background-color: rgb(255, 255, 94);
+    padding: 3px 6px; /* Add padding for better visibility */
+    border-radius: 4px; /* Slightly rounded corners for price labels */
+}
+
+ul {
+    list-style-type: disc; /* Use disc for bullet points */
+    padding-left: 20px; /* Add padding for bullet alignment */
+}
+
+ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+    font-size: 1.1em; /* Slightly larger font for list items */
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    /* Adjust sizes for inverter and battery options */
+    .option {
+        width: 60%; /* Make option boxes smaller */
+        margin: 10px auto; /* Center the boxes with margin */
+    }
+
+    /* Center the images in the option boxes */
+    .option img {
+        max-width: 100%; /* Ensure images fit within option boxes */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the panel images container for centering */
+    .panel-images {
+        justify-content: center; /* Center items in the container */
+    }
+
+    /* Adjust solar panel images */
+    .panel-images img {
+        max-width: 20%; /* Increase solar panel image size */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+button {
+    background-color: #000000; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1em; /* Font size */
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #6fa824; /* Darker green on hover */
+}

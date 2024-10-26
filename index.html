@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sangyug Solar Inverter System Selector</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Sangyug Solar Inverter System Selector</h1>
+
+    <div id="inverter-section" class="section">
+        <h2>Select an Inverter</h2>
+        <div class="option" onclick="selectInverter(3.6, 24, 64000, 20000)">
+            <img src="images/inverter-3.6-24v.png" alt="3.6 kVA - 24V Inverter">
+            <p>3.6 kVA - 24V</p>
+            <p class="view-specs">
+                <a href="https://pdfupload.io/docs/cb8a5093" target="_blank">View Specifications</a>
+            </p>
+            <p class="price">Price: 64,000 Ksh</p>
+        </div>
+        
+        
+        <div class="option" onclick="selectInverter(3.6, 48, 84000, 20000)">
+            <img src="images/inverter-3.6-48v.png" alt="3.6 kVA - 48V Inverter">
+            <p>3.6 kVA - 48V</p>
+            <p class="view-specs">
+                <a href="https://pdfupload.io/docs/cb8a5093" target="_blank">View Specifications</a>
+            </p>
+            <p class="price">Price: 84,000 Ksh</p>
+        </div>
+        
+        <div class="option" onclick="selectInverter(6.0, 48, 108000, 25000)">
+            <img src="images/inverter-6.0-48v.png" alt="6.0 kVA - 48V Inverter">
+            <p>6.0 kVA - 48V</p>
+            <p class="view-specs">
+                <a href="https://pdfupload.io/docs/cb8a5093" target="_blank">View Specifications</a>
+            </p>
+            <p class="price">Price: 108,000 Ksh</p>
+        </div>
+    </div>
+ 
+
+   <!-- Battery Selection Section -->
+   <div id="battery-section" class="section hidden">
+       <h2>Select a Battery</h2>
+   </div>
+
+   <!-- Solar Panel Requirement Section -->
+<!-- Solar Panel Requirement Section -->
+    <div id="panel-section" class="section hidden">
+        <h2>Solar Panels Required</h2>
+        <div id="panel-info"></div>
+        <br>
+        <div id="panel-images" class="panel-images"></div> <!-- Container for panel images -->
+    </div>
+    
+   <!-- Accessories (Always Included) -->
+   <div id="accessory-section" class="section hidden">
+       <h2>Accessories (Included)</h2>
+       <ul>
+           <li>Change Over Switch <span class="price">(4,000 Ksh)</span></li>
+           <li>DC MCCB <span class="price">(2,500 Ksh)</span></li>
+           <li>AVS 30 AMPS <span class="price">(4,000 Ksh)</span></li>
+           <li>Cable Accessories <span class="price">( apx 15,000 Ksh)</span></li>
+       </ul>
+   </div>
+
+   <!-- Summary Section -->
+   <div id="summary-section" class="section hidden">
+       <h2>Summary</h2>
+       <div id="summary"></div>
+       <p id="totalcost1">Total Cost : <span id="total-cost"></span><span id="totalcost1"> KSH</span></p>
+
+       <p>***Please note : Above quote do not include solar mounting / structure. This final quot can be given after the site survey is done.*** </p>
+       <button onclick="shareSummary()">Share Summary via Email</button>
+
+   </div>
+
+   
+   <script src="script.js"></script>
+</body>
+</html>
+
